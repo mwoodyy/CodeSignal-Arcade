@@ -1,0 +1,5 @@
+int solution(int year) {
+    int century = (year + 99) / 100;
+    
+    return century;
+}
