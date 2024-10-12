@@ -1,0 +1,6 @@
+int solution(int n) {
+    // reasoning: by looking at the shapes sideways, so that the bottom left side is now exactly the bottom, there are n rows of n length, and n-1 rows of n-1 length, multiplying these and then adding together will give the total area (number of longer rows * length of longer rows) + (number of shorter rows * length of shorter rows)
+    int area = (n*n) + (n-1)*(n-1);
+    
+    return area;
+}
