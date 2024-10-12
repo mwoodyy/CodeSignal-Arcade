@@ -1,0 +1,12 @@
+int solution(vector<int> inputArray) {
+    int product = -100000000;
+    int size = inputArray.size();
+    
+    for (int i = 1; i < size; i++){
+        if ((inputArray[i] * inputArray[i-1]) > product){
+            product = inputArray[i] * inputArray[i-1];
+        }
+    }
+    
+    return product;
+}
