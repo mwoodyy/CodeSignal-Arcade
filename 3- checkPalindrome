@@ -1,0 +1,12 @@
+bool solution(string inputString) {
+    bool isPal = true;
+    int size = inputString.size();
+    
+    for (int i = 0; i < size / 2; i++){
+        if (inputString[i] != inputString[size - 1 - i]){
+            isPal = false;
+        }
+    }
+    
+    return isPal;
+}
